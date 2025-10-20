@@ -11,9 +11,8 @@ window.onload = function() {
   const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
  
   //2. Generar indice aleatorios
-  const suitIndex = Math.floor(Math.random() * 8);
+  const suitIndex = Math.floor(Math.random() * 4);
   const valueIndex = Math.floor(Math.random() * 13);
-  
 
   //3. Obtener  símbolo y valor
   const suitSymbol = suits[suitIndex];
