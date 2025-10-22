@@ -31,6 +31,7 @@ window.onload = function() {
     cronoBody.innerHTML = veces
     veces--;
     if(veces == -1){
+      
       clearInterval(tiempo);
     }
   },1000);
