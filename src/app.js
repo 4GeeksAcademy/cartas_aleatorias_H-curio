@@ -21,15 +21,16 @@ window.onload = function() {
   //4. crear el div de la carta
   const cardDiv = document.createElement('div');
   cardDiv.className = 'card';
+
 //CRONO
-  const cronoBody = document.createElement('h5');
+  const cronoBody = document.getElementById('generador');
   cronoBody.innerHTML = '10'
-  document.body.appendChild(cronoBody);
+  document.body.appendChild(generador);
   let veces = 10
   const tiempo = setInterval(()=>{
     cronoBody.innerHTML = veces
     veces--;
-    if(veces == 0){
+    if(veces == -1){
       clearInterval(tiempo);
     }
   },1000);

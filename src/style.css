@@ -6,7 +6,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #092510; /* Opcional: un fondo suave */
+    background-color: #88d49b; /* Opcional: un fondo suave */
 }
 .card {
     width: 350px;
@@ -51,4 +51,12 @@ body {
 
 .club {
     color: black;
+}
+#generador {
+    border-bottom: 20 px;
+    background-color: azure;
+    display: flex;
+    border-bottom: 10 px;
+    width: 25 px;
+    height: 25 px;
 }
