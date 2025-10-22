@@ -19,8 +19,25 @@ window.onload = function() {
   const cardValue = values[valueIndex];
 
   //4. crear el div de la carta
-  const cardDiv = this.document.createElement('div');
+  const cardDiv = document.createElement('div');
   cardDiv.className = 'card';
+//CRONO
+  const cronoBody = document.createElement('h5');
+  cronoBody.innerHTML = '10'
+  document.body.appendChild(cronoBody);
+  let veces = 10
+  const tiempo = setInterval(()=>{
+    cronoBody.innerHTML = veces
+    veces--;
+    if(veces == 0){
+      clearInterval(tiempo);
+    }
+  },1000);
+
+  
+ 
+//
+
 
   //5 agregar la clase del palo (por ejemplo, 'heart)
   if (suitIndex === 1 || suitIndex === 0){ //corazon o diamantes
@@ -49,4 +66,5 @@ window.onload = function() {
 
     // 8. Añadir la carta al cuerpo del documento
     document.body.appendChild(cardDiv);
+    
 };
